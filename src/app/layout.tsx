@@ -9,9 +9,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Real Racing Experience | Professional Simulation",
-  description: "Ultimate professional-grade racing simulation experience. Feel the adrenaline, master the track, and push your limits.",
-};
+  description:
+    "Ultimate professional-grade racing simulation experience. Feel the adrenaline, master the track, and push your limits.",
 
+  icons: {
+    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%9A%97%3C/text%3E%3C/svg%3E",
+  },
+};
 export default function RootLayout({
   children,
 }: Readonly<{
