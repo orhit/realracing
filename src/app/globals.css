@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0a0a0a;
+  --color-foreground: #ffffff;
+  --color-primary: #ff0000;
+  --color-accent: #333333;
+  --color-metallic: #c0c0c0;
+  
+  --font-racing: "Inter", sans-serif;
+}
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-racing);
+}
+
+@layer base {
+  * {
+    @apply border-white/10;
+  }
+}
+
+.racing-gradient {
+  background: linear-gradient(135deg, #ff0000 0%, #800000 100%);
+}
+
+.metallic-finish {
+  background: linear-gradient(180deg, #333333 0%, #111111 100%);
+  border: 1px solid #444444;
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
